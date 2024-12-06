@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tricks/widgets/sliver_list.dart';
+import 'package:flutter_tricks/widgets/home_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,7 +12,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MySliverList(),
+      
+      home: HomePage(),
     );
   }
 }

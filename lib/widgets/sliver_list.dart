@@ -14,7 +14,7 @@ class MySliverList extends StatelessWidget {
             pinned: true,
             backgroundColor: Colors.indigo.shade200,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(
+              title: const Text(
                 'Sliver List',
                 style: TextStyle(color: Colors.white),
               ),
@@ -24,7 +24,7 @@ class MySliverList extends StatelessWidget {
               ),
             ),
           ),
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(
             child: Padding(
               padding: EdgeInsets.all(10),
               child: Text(
@@ -40,12 +40,13 @@ class MySliverList extends StatelessWidget {
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, int index) {
                 return Container(
-                  margin: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
                   decoration: BoxDecoration(
                     color: Colors
                         .primaries[index % Colors.primaries.length].shade200,
                     borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         color: Colors.black26,
                         offset: Offset(0, 4),
@@ -54,26 +55,26 @@ class MySliverList extends StatelessWidget {
                     ],
                   ),
                   child: ListTile(
-                    contentPadding: EdgeInsets.all(16),
+                    contentPadding: const EdgeInsets.all(16),
                     title: Text(
                       items[index],
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
                         color: Colors.black87,
                       ),
                     ),
-                    subtitle: Text(
+                    subtitle: const Text(
                       'List Created by code Flick',
                       style: TextStyle(
                         color: Colors.black54,
                       ),
                     ),
-                    leading: Icon(
+                    leading: const Icon(
                       Icons.list,
                       color: Colors.indigo,
                     ),
-                    trailing: Icon(
+                    trailing: const Icon(
                       Icons.arrow_forward_ios,
                       color: Colors.indigo,
                     ),
