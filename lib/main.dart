@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tricks/widgets/home_page.dart';
+import 'package:flutter_tricks/widgets/drawer.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,8 +12,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      
-      home: HomePage(),
+      home: MyDrawer(),
     );
   }
 }
