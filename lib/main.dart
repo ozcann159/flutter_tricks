@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tricks/widgets/animated.dart';
+
 import 'package:flutter_tricks/widgets/date_picker.dart';
 import 'package:flutter_tricks/widgets/drawer.dart';
 
@@ -13,7 +15,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyDatePicker(),
+      home: Animated(),
     );
   }
 }
