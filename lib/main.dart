@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tricks/widgets/animated.dart';
-
-import 'package:flutter_tricks/widgets/date_picker.dart';
-import 'package:flutter_tricks/widgets/drawer.dart';
+import 'package:flutter_tricks/101/icon_learn.dart';
+import 'package:flutter_tricks/utils/theme/themes.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,9 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Animated(),
+      theme: darkTheme,
+      home: const IconLearn(),
     );
   }
 }
