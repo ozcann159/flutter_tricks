@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tricks/101/color.dart';
 import 'package:flutter_tricks/101/icon_learn.dart';
+import 'package:flutter_tricks/101/list_view_builder.dart';
+import 'package:flutter_tricks/demos/my_collection_demos.dart';
 import 'package:flutter_tricks/utils/theme/themes.dart';
 
 void main() {
@@ -13,8 +16,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: darkTheme,
-      home: const IconLearn(),
+      theme: ThemeData.dark().copyWith(),
+      home: const MyCollectionDemos(),
     );
   }
 }

@@ -13,7 +13,7 @@ class IconLearn extends StatelessWidget {
         children: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.message_outlined,
               color: Colors.red,
               size: 40,
@@ -65,6 +65,3 @@ class IconLearn extends StatelessWidget {
   }
 }
 
-class IconSizes {
-  final int icon
-}
