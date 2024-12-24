@@ -34,14 +34,35 @@ class _MyCollectionDemosState extends State<MyCollectionDemos> {
     return Scaffold(
       body: ListView.builder(
         itemCount: _items.length,
+        padding: EdgeInsets.symmetric(horizontal: 20),
         itemBuilder: (context, index) {
           return Card(
+            margin: EdgeInsets.only(bottom: 40),
             child: SizedBox(
               height: 300,
-              child: Column(
-                children: [
-                  Image.asset(name)
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Image.asset(
+                        _items[index].imagePath,
+                        fit: BoxFit.fill,
+                        height: 200,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(_items[index].title),
+                          Text('${_items[index].price}')
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           );
