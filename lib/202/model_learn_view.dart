@@ -13,7 +13,7 @@ class _ModelLearnViewState extends State<ModelLearnView> {
   @override
   void initState() {
     super.initState();
-    final user1 = PostModel(); // Hepsi null old. icin birsey istemedi
+    final user1 = PostModel1(); // Hepsi null old. icin birsey istemedi
     user1.body = 'Hello';
 
     final user2 = PostModel2(1, 2, 'b', 'a');

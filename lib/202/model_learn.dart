@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-class PostModel {
+class PostModel1 {
   int? userId;
   int? id;
   String? title;
