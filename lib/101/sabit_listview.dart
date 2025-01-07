@@ -41,6 +41,35 @@ class _ListViewLearnState extends State<ListViewLearn> {
               print("Yıldız Tıklandı");
             },
           ),
+          GestureDetector(
+            onTap: () {
+              print('Card Tıklandı');
+            },
+            child: const Card(
+              child: SizedBox(
+                height: 50,
+                child: Row(
+                  children: [
+                    Text('Card Tasarım'),
+                    Spacer(),
+                    Icon(
+                      Icons.abc,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              print('Container Tıklandı');
+            },
+            child: Container(
+              height: 50,
+              color: Colors.red,
+              child: Text('Merhaba'),
+            ),
+          )
         ],
       ),
     );

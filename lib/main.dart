@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tricks/101/color.dart';
 import 'package:flutter_tricks/101/icon_learn.dart';
 import 'package:flutter_tricks/101/list_view_builder.dart';
+import 'package:flutter_tricks/101/listview_builder_dinamik.dart';
 import 'package:flutter_tricks/101/navigation_lear.dart';
+import 'package:flutter_tricks/101/sabit_gridview.dart';
 import 'package:flutter_tricks/101/sabit_listview.dart';
 import 'package:flutter_tricks/202/model_learn_view.dart';
 import 'package:flutter_tricks/202/service/service_learn_view.dart';
@@ -27,7 +29,7 @@ class MainApp extends StatelessWidget {
         unselectedLabelColor: Colors.green,
         indicatorColor: Colors.amber,
       )),
-      home:  ListViewLearn(),
+      home:  ListViewLearnDinamik(),
     );
   }
 }
