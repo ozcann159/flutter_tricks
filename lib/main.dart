@@ -7,6 +7,7 @@ import 'package:flutter_tricks/101/listview_builder_dinamik.dart';
 import 'package:flutter_tricks/101/navigation_lear.dart';
 import 'package:flutter_tricks/101/sabit_gridview.dart';
 import 'package:flutter_tricks/101/sabit_listview.dart';
+import 'package:flutter_tricks/101/yemek_uygulamasi.dart';
 import 'package:flutter_tricks/202/model_learn_view.dart';
 import 'package:flutter_tricks/202/service/service_learn_view.dart';
 import 'package:flutter_tricks/202/tab_learn.dart';
@@ -30,7 +31,7 @@ class MainApp extends StatelessWidget {
         unselectedLabelColor: Colors.green,
         indicatorColor: Colors.amber,
       )),
-      home: FutureBuilderlisteleme(),
+      home: YemekUygulamasi(),
     );
   }
 }
