@@ -74,7 +74,7 @@ class _YemekUygulamasiState extends State<YemekUygulamasi> {
                                   style: TextStyle(fontSize: 25),
                                 ),
                                 Text(
-                                  "${yemek.yemek_fiyat} \u{20BA}",
+                                  "${yemek.yemek_fiyat} \u20BA)",
                                   style: TextStyle(
                                       fontSize: 25, color: Colors.blue),
                                 ),

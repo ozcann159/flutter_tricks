@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tricks/101/color.dart';
+import 'package:flutter_tricks/101/filmler_uygulamasi.dart';
 import 'package:flutter_tricks/101/future_builderlisteleme.dart';
 import 'package:flutter_tricks/101/icon_learn.dart';
 import 'package:flutter_tricks/101/list_view_builder.dart';
@@ -31,7 +32,7 @@ class MainApp extends StatelessWidget {
         unselectedLabelColor: Colors.green,
         indicatorColor: Colors.amber,
       )),
-      home: YemekUygulamasi(),
+      home: FilmlerUygulamasi(),
     );
   }
 }
