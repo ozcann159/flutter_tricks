@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tricks/101/color.dart';
+import 'package:flutter_tricks/101/dosya_islemleri.dart';
 import 'package:flutter_tricks/101/filmler_uygulamasi.dart';
 import 'package:flutter_tricks/101/future_builderlisteleme.dart';
 import 'package:flutter_tricks/101/icon_learn.dart';
@@ -8,6 +9,7 @@ import 'package:flutter_tricks/101/listview_builder_dinamik.dart';
 import 'package:flutter_tricks/101/navigation_lear.dart';
 import 'package:flutter_tricks/101/sabit_gridview.dart';
 import 'package:flutter_tricks/101/sabit_listview.dart';
+import 'package:flutter_tricks/101/sp_login_uygulamasi.dart';
 import 'package:flutter_tricks/101/tabbar_liew.dart';
 import 'package:flutter_tricks/101/yemek_uygulamasi.dart';
 import 'package:flutter_tricks/202/model_learn_view.dart';
@@ -28,12 +30,12 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(
-          tabBarTheme: TabBarTheme(
-        labelColor: Colors.white,
-        unselectedLabelColor: Colors.green,
-        indicatorColor: Colors.amber,
-      )),
-      home: TabbarLiew(),
+      tabBarTheme: TabBarTheme(
+      labelColor: Colors.white,
+      unselectedLabelColor: Colors.green,
+      indicatorColor: Colors.amber,
+      ),),
+      home: DosyaIslemleri(),
     );
   }
 }
