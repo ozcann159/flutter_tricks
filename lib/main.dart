@@ -30,12 +30,12 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(
-      tabBarTheme: TabBarTheme(
+      tabBarTheme: const TabBarTheme(
       labelColor: Colors.white,
       unselectedLabelColor: Colors.green,
       indicatorColor: Colors.amber,
       ),),
-      home: DosyaIslemleri(),
+      home: const DosyaIslemleri(),
     );
   }
 }

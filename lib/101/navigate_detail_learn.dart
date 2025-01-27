@@ -17,7 +17,7 @@ class _NavigateDetailLearnState extends State<NavigateDetailLearn> {
           onPressed: () {
             Navigator.of(context).pop(true);
           },
-          child: Text('Onayla'),
+          child: const Text('Onayla'),
         ),
       ),
     );

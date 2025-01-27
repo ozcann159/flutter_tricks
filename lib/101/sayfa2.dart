@@ -10,7 +10,7 @@ class Sayfa2 extends StatefulWidget {
 class _Sayfa2State extends State<Sayfa2> {
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text(
         "Sayfa İki",
         style: TextStyle(color: Colors.black54, fontSize: 30),

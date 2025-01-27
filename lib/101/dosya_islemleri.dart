@@ -63,7 +63,7 @@ class _DosyaIslemleriState extends State<DosyaIslemleri> {
               padding: const EdgeInsets.all(8.0),
               child: TextField(
                 controller: tfgirdi,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: "Veri Giriniz",
                 ),
               ),
@@ -89,8 +89,15 @@ class _DosyaIslemleriState extends State<DosyaIslemleri> {
                   },
                   child: Text("Sil"),
                 ),
+                  ElevatedButton(
+                  onPressed: () {
+                    veriSil();
+                  },
+                  child: Text("Sil"),
+                ),
               ],
-            )
+            ),
+            
           ],
         ),
       ),

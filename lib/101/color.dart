@@ -9,14 +9,14 @@ class ColorLearning extends StatelessWidget {
       appBar: AppBar(),
       body: Container(
         color: ColorsItems.porchase,
-        child: Text('data'),
+        child: const Text('data'),
       ),
     );
   }
 }
 
 class ColorsItems{
-  static Color porchase = Color(0xFFEDBF61);
+  static Color porchase = const Color(0xFFEDBF61);
   
-  final Color sulu = Color.fromRGBO(198, 237, 97, 1);
+  final Color sulu = const Color.fromRGBO(198, 237, 97, 1);
 }

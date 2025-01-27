@@ -28,7 +28,7 @@ class _AnasayfaState extends State<Anasayfa> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
-        builder: (context) => SpLoginUygulamasi(),
+        builder: (context) => const SpLoginUygulamasi(),
       ),
     );
   }

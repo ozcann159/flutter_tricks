@@ -24,7 +24,7 @@ class _FutureBuilderlistelemeState extends State<FutureBuilderlisteleme> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Araba Markaları"),
+        title: const Text("Araba Markaları"),
       ),
       body: FutureBuilder(
         future: veriAl(),
