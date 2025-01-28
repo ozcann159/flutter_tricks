@@ -27,7 +27,7 @@ class _SpLoginUygulamasiState extends State<SpLoginUygulamasi> {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => Anasayfa(),
+            builder: (context) => const Anasayfa(),
           ));
     } else {
       ScaffoldMessenger.of(context).showSnackBar(

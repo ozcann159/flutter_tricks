@@ -71,17 +71,17 @@ class _YemekUygulamasiState extends State<YemekUygulamasi> {
                               children: [
                                 Text(
                                   yemek.yemek_adi,
-                                  style: TextStyle(fontSize: 25),
+                                  style: const TextStyle(fontSize: 25),
                                 ),
                                 Text(
                                   "${yemek.yemek_fiyat} \u20BA)",
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontSize: 25, color: Colors.blue),
                                 ),
                               ],
                             ),
-                            Spacer(),
-                            Icon(Icons.keyboard_arrow_right),
+                            const Spacer(),
+                            const Icon(Icons.keyboard_arrow_right),
                           ],
                         ),
                       ),
@@ -90,7 +90,7 @@ class _YemekUygulamasiState extends State<YemekUygulamasi> {
                 },
               );
             } else {
-              return Center();
+              return const Center();
             }
           }),
     );

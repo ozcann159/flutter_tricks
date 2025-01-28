@@ -57,59 +57,59 @@ class _FilmlerState extends State<FilmlerUygulamasi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Filmler'),
-          centerTitle: true,
-          backgroundColor: Colors.blueAccent,
-        ),
-        body: FutureBuilder(
-            future: filmleriGetir(),
-            builder: (context, snapshot) {
-              if (snapshot.hasData) {
-                var filmlerListesi = snapshot.data;
-                return GridView.builder(
-                    itemCount: filmlerListesi!.length,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2, childAspectRatio: 2 / 3.5),
-                    itemBuilder: (context, index) {
-                      var film = filmlerListesi[index];
-                      return Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => DetaySayfa3(film),
-                              ),
-                            );
-                          },
-                          child: Card(
-                            child: Column(
-                              children: [
-                                Image.asset(
-                                    'assets/images/${film.film_resim_adi}'),
-                                Text(
-                                  film.film_adi,
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Text(
-                                  "${film.film_fiyat} \u20BA)",
-                                  style: TextStyle(fontSize: 16),
-                                ),
-                              ],
-                            ),
+      appBar: AppBar(
+        title: const Text('Filmler'),
+        centerTitle: true,
+        backgroundColor: Colors.blueAccent,
+      ),
+      body: FutureBuilder(
+        future: filmleriGetir(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            var filmlerListesi = snapshot.data;
+            return GridView.builder(
+                itemCount: filmlerListesi!.length,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2, childAspectRatio: 2 / 3.5),
+                itemBuilder: (context, index) {
+                  var film = filmlerListesi[index];
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => DetaySayfa3(film),
                           ),
+                        );
+                      },
+                      child: Card(
+                        child: Column(
+                          children: [
+                            Image.asset('assets/images/${film.film_resim_adi}'),
+                            Text(
+                              film.film_adi,
+                              style: const TextStyle(
+                                  fontSize: 16, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "${film.film_fiyat} \u20BA)",
+                              style: const TextStyle(fontSize: 16),
+                            ),
+                          ],
                         ),
-                      );
-                    });
-              } else {
-                return Center(
-                  child: Text("Error"),
-                );
-              }
-            }));
+                      ),
+                    ),
+                  );
+                });
+          } else {
+            return const Center(
+              child: Text("Error"),
+            );
+          }
+        },
+      ),
+    );
   }
 }
