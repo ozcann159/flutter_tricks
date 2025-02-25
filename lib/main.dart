@@ -13,7 +13,11 @@ import 'package:flutter_tricks/101/sabit_listview.dart';
 import 'package:flutter_tricks/101/sp_login_uygulamasi.dart';
 import 'package:flutter_tricks/101/tabbar_liew.dart';
 import 'package:flutter_tricks/101/yemek_uygulamasi.dart';
+import 'package:flutter_tricks/202/animated_learn_view.dart';
+import 'package:flutter_tricks/202/cache/shared_learn_cache.dart';
+import 'package:flutter_tricks/202/image_learn_202.dart';
 import 'package:flutter_tricks/202/model_learn_view.dart';
+import 'package:flutter_tricks/202/oop_learn_view.dart';
 import 'package:flutter_tricks/202/package_learn_view.dart';
 import 'package:flutter_tricks/202/service/service_learn_view.dart';
 import 'package:flutter_tricks/202/service/service_post_learn_view.dart';
@@ -48,7 +52,7 @@ class _MainAppState extends State<MainApp> {
       //     indicatorColor: Colors.amber,
       //   ),
       // ),
-      home: ThemeLearnView(),
+      home: SharedLearnCache(),
     );
   }
 }
